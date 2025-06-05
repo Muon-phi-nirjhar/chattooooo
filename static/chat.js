@@ -4,7 +4,7 @@ const msgInput = document.getElementById('msg');
 
 function appendMessage(data) {
     const p = document.createElement('p');
-    const label = data.user === "N" ? "🟦 N" : "🟥 D";
+    const label = data.user === "N" ? "🟦 N" : "🟥 T";
     p.innerHTML = `<strong>${label}:</strong> ${data.text}`;
     chatBox.appendChild(p);
     chatBox.scrollTop = chatBox.scrollHeight;
